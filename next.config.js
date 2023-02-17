@@ -1,3 +1,7 @@
-// next.config.js
-const withImages = require('next-images')
-module.exports = withImages()
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  images: {
+    unoptimized: true,
+  },
+}
