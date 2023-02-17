@@ -1,20 +1,7 @@
 /** @type {import('next').NextConfig} */
-// next.config.js
-
-const isGithubActions = process.env.GITHUB_ACTIONS || false
-
-let assetPrefix = ''
-let basePath = ''
-
-if (isGithubActions) {
-  // trim off `<owner>/`
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '') + "portfolio"
-  console.log(repo);
-  assetPrefix = `/${repo}/`
-  basePath = `/${repo}`
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
 }
 
-module.exports = {
-  assetPrefix: assetPrefix,
-  basePath: basePath,
-}
+module.exports = nextConfig
