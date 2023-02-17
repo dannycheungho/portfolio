@@ -27,7 +27,7 @@ export default function About() {
                     <h5 className="gray">Introduce</h5>
                     <h1 className="white">Hello, I&#39;m danny</h1>
                     <h3 className="white">Design is not just what it looks like. Design is how it works!</h3>
-                    <p className="gray">Hi, I'm a backend programmer with 2 years of experience, specializing in Spring Boot for developing scalable and robust web applications. I have strong experience in web technologies, RESTful API design, and optimizing code performance. I've worked on various projects from small prototypes to enterprise applications, and I'm comfortable working with both SQL and NoSQL databases, as well as integrating with third-party APIs. I value clean, modular, and maintainable code, teamwork, and staying up-to-date with the latest developments in the field.</p>
+                    <p className="gray">Hi, I&apos;m a backend programmer with 2 years of experience, specializing in Spring Boot for developing scalable and robust web applications. I have strong experience in web technologies, RESTful API design, and optimizing code performance. I&apos;ve worked on various projects from small prototypes to enterprise applications, and I&apos;m comfortable working with both SQL and NoSQL databases, as well as integrating with third-party APIs. I value clean, modular, and maintainable code, teamwork, and staying up-to-date with the latest developments in the field.</p>
                 </div>
             </div>
 
