@@ -1,22 +1,3 @@
-/** @type {import('next').NextConfig} */
 // next.config.js
-
-//const isGithubActions = process.env.GITHUB_ACTIONS || false
-
-// let assetPrefix = ''
-// let basePath = ''
-
-// if (isGithubActions) {
-//   // trim off `<owner>/`
-//   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-//   //console.log(repo);
-//   assetPrefix = `/portfolio/`
-//   //basePath = `/${repo}`
-// }
-
-module.exports = {
-  assetPrefix: `/portfolio/`,
-  basePath: `/portfolio/`,
-  reactStrictMode: true,
-  swcMinify: true
-}
+const withImages = require('next-images')
+module.exports = withImages()
