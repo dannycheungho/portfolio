@@ -16,6 +16,7 @@
 
 module.exports = {
   assetPrefix: `/portfolio/`,
+  basePath: `/portfolio/`,
   reactStrictMode: true,
   swcMinify: true
 }
