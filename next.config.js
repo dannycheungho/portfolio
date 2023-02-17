@@ -1,7 +1,7 @@
-// /** @type {import('next').NextConfig} */
-// // next.config.js
+/** @type {import('next').NextConfig} */
+// next.config.js
 
-// const isGithubActions = process.env.GITHUB_ACTIONS || false
+//const isGithubActions = process.env.GITHUB_ACTIONS || false
 
 // let assetPrefix = ''
 // let basePath = ''
@@ -14,23 +14,8 @@
 //   //basePath = `/${repo}`
 // }
 
-// module.exports = {
-//   assetPrefix: assetPrefix,
-//   reactStrictMode: true,
-//   swcMinify: true
-// }
-
-const withImages = require('next-images')
-const withPlugins = require('next-compose-plugins');
-const isDev = process.env.NODE_ENV !== "production";
-
-module.exports = withPlugins([
-    [withImages, {
-        assetPrefix: isDev ? "": "/portfolio/"
-    }],
-    {
-        trailingSlash: true,
-        basePath: isDev ? "": "/portfolio",
-        assetPrefix: isDev ? "": "/portfolio/"    
-    }
-])
+module.exports = {
+  assetPrefix: `/portfolio/`,
+  reactStrictMode: true,
+  swcMinify: true
+}
