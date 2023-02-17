@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
+// next.config.js
 
 const isGithubActions = process.env.GITHUB_ACTIONS || false
 
 let assetPrefix = ''
-let basePath = '/'
+let basePath = ''
 
 if (isGithubActions) {
   // trim off `<owner>/`
@@ -13,15 +14,7 @@ if (isGithubActions) {
   basePath = `/${repo}`
 }
 
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+module.exports = {
   assetPrefix: assetPrefix,
   basePath: basePath,
-  images: {
-    loader: 'imgix',
-    path: 'the "domain" of your Imigix source',
-  }
 }
-
-module.exports = nextConfig
